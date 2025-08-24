@@ -30,5 +30,5 @@ Course: BSIT - Major in Mobile and Web Development
 
 GitHub: @PajoRickyJr
 
-License
+License:
 This project is created for academic and portfolio purposes.
