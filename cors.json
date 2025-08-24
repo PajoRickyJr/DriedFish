@@ -1,0 +1,8 @@
+[
+    {
+      "origin": ["http://localhost:5501", "http://127.0.0.1:5501"],
+      "method": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+      "maxAgeSeconds": 3600,
+      "responseHeader": ["Content-Type", "Authorization", "x-goog-meta-*"]
+    }
+  ]

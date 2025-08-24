@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Nene Rosie Ugahan</title>
+    <link rel="stylesheet" href="tienda.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .about-hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 80vh;
+            background: linear-gradient(120deg, #ffb347 0%, #f5e9da 100%); 
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        .about-hero-icon {
+             font-size: 7rem;
+            color: #a67c52;
+            margin-bottom: 1.5rem;
+            filter: drop-shadow(0 4px 16px rgba(166,124,82,0.15));
+        }
+        .about-hero-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+            color: #a67c52;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .about-hero-tagline {
+            font-size: 1.3rem;
+            color: #7a4c00;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .about-section {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: #fff8f0;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(166,124,82, 0.10);
+            padding: 2.5rem 2rem;
+        }
+        .about-section h2 {
+            color: #a67c52;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 1rem;
+        }
+        .about-section p {
+            color: #7a4c00;
+            font-size: 1.1rem;
+            margin-bottom: 1.2rem;
+        }
+        .about-values {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 2rem;
+            justify-content: center;
+        }
+        .value-card {
+            background: #f5e9da;
+            border-radius: 10px;
+            padding: 1.5rem 1.2rem;
+            flex: 1 1 220px;
+            min-width: 220px;
+            max-width: 300px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(166,124,82, 0.06);
+        }
+        .value-card i {
+            font-size: 2.2rem;
+            color: #a67c52;
+            margin-bottom: 0.7rem;
+        }
+        .value-card h3 {
+            font-size: 1.2rem;
+            color: #a67c52;
+            margin-bottom: 0.5rem;
+        }
+        .value-card p {
+            font-size: 1rem;
+            color: #7a4c00;
+        }
+        @media (max-width: 700px) {
+            .about-section { padding: 1.2rem 0.5rem; }
+            .about-values { flex-direction: column; gap: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo" style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="fas fa-fish" style="font-size: 2.2rem; color: #fff;"></i>
+            <span style="font-family: 'Montserrat', sans-serif; font-size: 2rem; color: #fff; font-weight: 700; text-shadow: 0 2px 8px rgba(33,150,243,0.10);">Nene Rosie Ugahan</span>
+        </div>
+        <nav>
+            <ul id="menuItems">
+                <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="products.html"><i class="fas fa-fish"></i>Products</a></li>
+                <li><a href="about.html" class="active"><i class="fas fa-info-circle"></i>About</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i>Contact</a></li>
+                <a href="seller-login.html" class="seller-icon-link" title="Seller Login">
+                    <i class="fas fa-id-badge"></i>Login
+                </a>
+            </ul>
+        </nav>
+        <div class="menu-icon" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+    </header>
+
+    <main>
+        <section class="about-hero">
+            <span class="about-hero-icon"><i class="fas fa-fish"></i></span>
+            <h1 class="about-hero-title">About Nene Rosie Ugahan</h1>
+            <div class="about-hero-tagline">
+                Bringing the best dried fish to your table—delivered with care and tradition.
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h2>Our Story</h2>
+            <p>
+                Nene Rosie Ugahan was founded with a simple mission: to make the finest dried fish accessible to everyone. Our journey began in the heart of the local fishing community, where we saw the passion and dedication of fishermen and families who have passed down their craft for generations.
+            </p>
+            <p>
+                Today, we connect these traditions with modern convenience, offering a curated selection of dried fish delivered straight to your door. Whether you're a home cook or a seafood enthusiast, Nene Rosie Ugahan is your trusted source for quality, taste, and sustainability.
+            </p>
+        </section>
+
+        <section class="about-section">
+            <h2>Our Mission & Vision</h2>
+            <p><strong>Mission:</strong> To provide the highest quality dried fish, supporting local fishermen and promoting sustainable practices.</p>
+            <p><strong>Vision:</strong> To be the leading online destination for dried fish lovers, known for trust, freshness, and community impact.</p>
+        </section>
+
+        <section class="about-section">
+            <h2>Our Values</h2>
+            <div class="about-values">
+                <div class="value-card">
+                    <i class="fas fa-water"></i>
+                    <h3>Freshness</h3>
+                    <p>We guarantee the freshest catch and the finest dried fish, every time you order.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h3>Community</h3>
+                    <p>We support local fishermen and their families, helping sustain coastal communities.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Sustainability</h3>
+                    <p>We are committed to responsible sourcing and eco-friendly practices for a better future.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-smile-beam"></i>
+                    <h3>Customer Care</h3>
+                    <p>Your satisfaction is our top priority. We're here to serve you with a smile.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3 style="color: #ffb347;">Nene Rosie Ugahan</h3>
+                <p style="color: #fff;">Your trusted source for dried fish, delivered to your door.</p>
+            </div>
+            <div class="footer-col">
+                <h3 style="color: #ffb347;">Quick Links</h3>
+                <ul>
+                    <li><a href="home.html" style="color: #fff;">Home</a></li>
+                    <li><a href="products.html" style="color: #fff;">Products</a></li>
+                    <li><a href="about.html" style="color: #fff;">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 style="color: #ffb347;">Products</h3>
+                <ul>
+                    <li><a href="products.html#dried" style="color: #fff;">Dried Fish</a></li>
+                </ul>
+            </div>
+            <div class="footer-col" id="contact">
+                <h3 style="color: #ffb347;">Contact</h3>
+                <p style="color: #fff;">09367151099</p>
+                
+            </div>
+        </div>
+        <div class="copyright" style="color: #ffb347;">
+            &copy; 2025 Nene Rosie Ugahan. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

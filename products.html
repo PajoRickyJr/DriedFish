@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nene Rosie Ugahan - Dried Fish</title>
+    <link rel="stylesheet" href="tienda.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo" style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="fas fa-fish" style="font-size: 2.2rem; color: #fff;"></i>
+            <span style="font-family: 'Montserrat', sans-serif; font-size: 2rem; color: #fff; font-weight: 700; text-shadow: 0 2px 8px rgba(33,150,243,0.10);">Nene Rosie Ugahan</span>
+        </div>
+        <nav>
+            <ul id="menuItems">
+                <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="products.html" class="active"><i class="fas fa-fish"></i>Products</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i>About</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i>Contact</a></li>
+                <a href="seller-login.html" class="seller-icon-link" title="Seller Login">
+                    <i class="fas fa-id-badge"></i>Login
+                </a>
+            </ul>
+        </nav>
+        <div class="cart-icon" onclick="toggleCart()">
+            <i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+    </header>
+
+    <nav class="category-nav">
+        <ul>
+            <li><a href="#dried"><i class="fas fa-water"></i>Dried Fish</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <div class="product-grid" id="productContainer">
+            <!-- Products will be loaded here by JS -->
+        </div>
+        <a href="#menuItems" id="backtoTop"> <i class="fas fa-arrow-up"></i> </a>
+    </main>
+
+    <aside class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="cart-close-btn" aria-label="Close cart">&times;</button>
+        </div>
+        <div id="cartItems" class="cart-items">
+            <!-- Cart items will be loaded here by JS -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">Total: ₱<span id="cartTotal">0.00</span></div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+            <button class="clear-cart-btn">Clear Cart</button>
+        </div>
+    </aside>
+
+  
+          <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3 style="color: #ffb347;">Nene Rosie Ugahan</h3>
+                <p style="color: #fff;">Your trusted source for dried fish, delivered to your door.</p>
+            </div>
+            <div class="footer-col">
+                <h3 style="color: #ffb347;">Quick Links</h3>
+                <ul>
+                    <li><a href="home.html" style="color: #fff;">Home</a></li>
+                    <li><a href="products.html" style="color: #fff;">Products</a></li>
+                    <li><a href="about.html" style="color: #fff;">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 style="color: #ffb347;">Products</h3>
+                <ul>
+                    <li><a href="products.html#dried" style="color: #fff;">Dried Fish</a></li>
+                </ul>
+            </div>
+            <div class="footer-col" id="contact">
+                <h3 style="color: #ffb347;">Contact</h3>
+                <p style="color: #fff;">09367151099</p>
+               
+            </div>
+        </div>
+        <div class="copyright" style="color: #ffb347;">
+            &copy; 2025 Nene Rosie Ugahan. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- First load regular scripts -->
+    <script src="cart.js"></script>
+    
+    <!-- Then load module scripts -->
+    <script type = "module" src = "module-bridge.js"></script>
+    <script type = "module" src = "main.js"></script>
+    <script type = "module" src = "product.js"></script>
+    <script type = "module" src = "checkout.js"></script>
+    <script type = "module" src = "cart.js"></script>
+
+    
+    <!-- Menu toggle function -->
+    <script>
+    function toggleMenu() {
+        const menuItems = document.getElementById('menuItems');
+        menuItems.classList.toggle('show');
+    }
+    </script>
+</body>
+</html>
